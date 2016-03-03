@@ -1,0 +1,1050 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Solitudo Alarum</title>
+
+
+
+
+
+
+<meta property="og:title" content="Solitudo Alarum" />
+<meta property="og:site_name" content="We Name The Stars"/>
+<meta property="og:description" content="Information page for Solitudo Alarum" />
+<meta property="og:url" content="http://127.0.0.1:8000/" />
+<meta property="og:image" content="http://wenamethestars.inkleby.com/static/images/pluto.png" />
+
+
+
+<link rel="apple-touch-icon" sizes="57x57" href = "/static/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href = "/static/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href = "/static/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href = "/static/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href = "/static/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href = "/static/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href = "/static/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href = "/static/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href = "/static/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href = "/static/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href = "/static/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href = "/static/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href = "/static/favicon/favicon-16x16.png">
+<link rel="manifest" href = "{% static "favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" %}">
+<meta name="theme-color" content="#ffffff">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href=/static/css/bootstrap.min.css rel="stylesheet">
+<link href=/static/css/inkleby_generic.css rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+
+</head>
+
+<body onload="initialize()">
+    <nav class=" navbar navbar-inverse navbar-fixed-top navbar-font" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-font navbar-brand " href="/" style="color:#FFF">We Name The Stars</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    
+                    <li>
+                        <a href="/rover/"style="color:#FFF" >Moon Rover</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/"style="color:#FFF" >About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.inkleby.com/"style="color:#FFF" >Inkleby</a>
+                    </li>
+                    
+                    <li>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+		
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->		
+
+    </nav>
+
+
+
+<br><br><br>
+
+
+
+<style>
+
+tour, nottour {
+    display:none;
+}
+
+.table-row { 
+  overflow: hidden; 
+}
+.table-row .table-cell {
+  # your other styles
+  float: left;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.table-border {
+border-style: solid;
+border-width: 2px 1px 0px 2px;
+}
+
+.row-border {
+border-style: solid;
+border-width: 0px 0px 2px 0px;
+}
+
+</style>
+
+
+<div class = "container">
+    <div class = "jumbotron" style="margin-top:5px;padding-top:10px;padding-bottom:10px;text-align:center">
+        <h2>Solitudo Alarum (<a href="/world/mercury">Mercury</a>)</h2>
+        
+        <h4>Albedo feature; Antoniadi map.</h4>
+        
+        <h4>A albedo feature is an area which shows a contrast in brightness or darkness (albedo) with adjacent areas.</h4>
+
+    </div>
+    <div class = "row">
+        <div class = "col-md-5 responsive-right-shift">
+            <div id="map-canvas"></div>
+            
+            
+            <sub><a href=" http://astrogeology.usgs.gov/search/details/Mercury/Messenger/Global/Mercury_MESSENGER_MDIS_mosaic_global_250m_2013/cub">Image Source</a>. Marker locations are approximate and may not always appear to align with image on map.</sub>
+            
+            
+        </div>
+            <div class = "col-md-6">
+                <div class = "row" >
+                
+                <div class = "row table-row row-border">
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>NW 920 km</b></p>
+                        <p>
+                         <a id="14645" class="" href="/feature/14645#5627.0000">Picasso</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            14 Hours 22 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            11 Days 13 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>N 355 km</b></p>
+                        <p>
+                         <a id="14648" class="" href="/feature/14648#5627.0000">Firdousi</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            5 Hours 32 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            4 Days 10 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>NE 299 km</b></p>
+                        <p>
+                         <a id="15387" class="" href="/feature/15387#5627.0000">Bagryana</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            4 Hours 40 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            3 Days 18 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class = "row table-row row-border">
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>W 437 km</b></p>
+                        <p>
+                         <a id="15185" class="" href="/feature/15185#5627.0000">Barney</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            6 Hours 50 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            5 Days 11 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <div class="responsive-hide">
+                        <h3>Solitudo Alarum</h3>
+                        <p>-15.0° N 70.0° E</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>E 303 km</b></p>
+                        <p>
+                         <a id="14650" class="" href="/feature/14650#5627.0000">Steichen</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            4 Hours 44 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            3 Days 19 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class = "row table-row row-border">
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>SW 95 km</b></p>
+                        <p>
+                         <a id="15140" class="hastour" href="/feature/15140#5627.0000">David</a> <tour>(last)</tour> 
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            1 Hour 29 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            1 Day 4 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>S 251 km</b></p>
+                        <p>
+                         <a id="15134" class="" href="/feature/15134#5627.0000">Nautilus Rupes</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            3 Hours 55 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            3 Days 3 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>SE 107 km</b></p>
+                        <p>
+                         <a id="14646" class="hastour" href="/feature/14646#5627.0000">Kipling</a> <tour>(next)</tour> 
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            1 Hour 40 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            1 Day 8 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                </div>
+                 <div class = "row tour">
+
+                 
+                 <tour >
+                 <div class="center">
+                 
+                     Tour so far: Visited 3 locations over 691 km.
+                      Next: <a href="/feature/14646">Kipling</a>
+                    <div class="auto-start">(<a href="/feature/14646#auto">Auto Tour</a>).</div>
+                    <div class="auto-stop">(<a href="/feature/5627">Stop Tour</a>).</div>
+                     
+                 
+                 </div>
+                 </tour>
+                 <nottour style="display:None">
+                 <a class="tour_return" href="/feature/0000">Return to Tour</a>
+                 </nottour>
+                 
+                </div>               
+            </div>
+    </div>
+    
+</div>
+
+
+
+
+
+        <div class="container" style="padding-bottom:20px">
+		<hr>
+		<div class = "row">
+			<div class="col-md-6">
+				<div class="row">
+					Built by <a href="http://www.inkleby.com">Inkleby</a> based on data from the <a target = "_blank" href="http://planetarynames.wr.usgs.gov/">Gazetteer of Planetary Nomenclature</a>.
+				</div>
+			</div>
+
+		
+		<div class="col-md-6 responsive-left">
+        This website uses cookies to see how many people visited (<a href="/privacy/">Learn More</a>).
+		</div>
+		
+		
+		</div>
+
+<script type="text/javascript" src="/static/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+    
+		<script>
+			/*
+			 * Adapated from PS_Bramus.GoogleMapsTileCutter Config
+			 * ----------------
+			 */
+
+				var repeatOnXAxis = true; // Do we need to repeat the image on the X-axis? Most likely you'll want to set this to -
+
+
+
+			/*
+			 * Helper function which normalizes the coords so that tiles can repeat across the X-axis (horizontally) like the standard Google map tiles.
+			 * ----------------
+			 */
+
+				function getNormalizedCoord(coord, zoom) {
+					if (!repeatOnXAxis) return coord;
+
+					var y = coord.y;
+					var x = coord.x;
+
+					// tile range in one direction range is dependent on zoom level
+					// 0 = 1 tile, 1 = 2 tiles, 2 = 4 tiles, 3 = 8 tiles, etc
+					var tileRange = 1 << zoom;
+
+					// don't repeat across Y-axis (vertically)
+					if (y < 0 || y >= tileRange) {
+						return null;
+					}
+
+					// repeat across X-axis
+					if (x < 0 || x >= tileRange) {
+						x = (x % tileRange + tileRange) % tileRange;
+					}
+
+                    
+					return {
+						x: x,
+						y: y
+					};
+
+				}
+
+
+                
+                
+				    function initialize() {
+
+                    
+                    
+					// Define our custom map type
+					var customMapType = new google.maps.ImageMapType({
+						getTileUrl: function(coord, zoom) {
+							var normalizedCoord = getNormalizedCoord(coord, zoom);
+							if(normalizedCoord && (normalizedCoord.x < Math.pow(2, zoom)) && (normalizedCoord.x > -1) && (normalizedCoord.y < Math.pow(2, zoom)) && (normalizedCoord.y > -1)) {
+								return "http://inkleby.github.io/world_tiles/Mercury/" + zoom + '_' + normalizedCoord.x + '_' + normalizedCoord.y + '.png';
+							} else {
+								return '/static/empty.png';
+							}
+						},
+						tileSize: new google.maps.Size(256, 256),
+						maxZoom: 6,
+                        radius: 2439.7 * 1000, //depends on planet
+						name: 'Mercury',
+                        credit: 'Image Credit: NASA/JPL/ASU/MSSS'
+					});
+                    
+                    
+                    
+                    POSITIVE_WEST = false
+                    
+                    
+                    x_offset = 128
+                    y_offset = -64
+                    
+                    if (POSITIVE_WEST == true) {
+                    x_offset = 0 - x_offset
+                    }
+                    
+                    
+                    customMapType.projection = {
+                        fromLatLngToPoint: function(latLng) {
+                          x = latLng.lng();
+                          y = latLng.lat();
+                          
+                          y = 0 -(((y/90) * 64)  + y_offset)
+                          x = (((x/180) * 128)  + x_offset)
+                          
+                          if (POSITIVE_WEST == true) {
+                          x = 0 - x
+                          }
+                          
+                          
+                          return new google.maps.Point(x,y);
+                        },
+                        fromPointToLatLng: function(point, noWrap) {
+                          var x = point.x
+                          
+                          if (POSITIVE_WEST == true) {
+                            x = 0 - x
+                            }
+                          
+                          x = (((x - x_offset)/128)*180);
+                          
+                          var y = 0 - (point.y)
+                          y = (((y - y_offset)/64)*90);
+                          //if (y > 90){
+                          //y = 0 - (y - 90)
+                          //}                          
+                          
+                          
+                          return new google.maps.LatLng(
+                              y,x,noWrap);
+                        }
+                      };
+                    
+                    
+					// Basic options for our map
+					var myOptions = {
+                        center: new google.maps.LatLng(-15.0, 70.0),
+						zoom: 5,
+						minZoom: 0,
+                        maxZoom: 7,
+                        scrollWheelZoom:'center',
+						streetViewControl: false,
+						mapTypeControl: false,
+						mapTypeControlOptions: {
+							mapTypeIds: ["custom"]
+						}
+					};
+                    
+
+                    
+                    
+					// Init the map and hook our custom map type to it
+					var map = new google.maps.Map(document.getElementById('map-canvas'), myOptions);
+					map.mapTypes.set('custom', customMapType);
+					
+
+                      // push the credit/copyright custom control
+                    map.setMapTypeId('custom');
+                    
+                    
+                    
+ 
+ var hash = window.location.hash.substring(1);
+ var next_feature = "14646";
+ var progression_speed = 30000
+ 
+if (hash == "auto") {
+    if (next_feature != "") {
+    window.setTimeout(function(){
+
+        // Move to next location
+        window.location.href = "/feature/"+ next_feature + "#auto";
+
+    }, progression_speed);
+    }
+    hash = ""
+    $(".auto-start").hide()
+} else {
+    $(".auto-stop").hide()
+}
+ 
+if (hash != "" ){
+    o = hash.split(".")
+    prev_id = o[0]
+    offroad_id = o[1]
+    offroad = true
+} else {
+    prev_id = 0
+    offroad_id = "5627"
+    offroad = false
+}
+
+function fixUrl(url) {
+    //given a url, sees if it should have the offroad position injected
+    hash_parts = url.split("#")
+    
+    if (hash_parts.length < 2) {
+        return url 
+        } else {
+        return url.replace(".0000","." + offroad_id)
+
+        }
+}
+
+function cleanURL(url) {
+    //given a url, sees if it has a hash and removes it
+    hash_parts = url.split("#")
+    
+    if (hash_parts.length < 2) {
+        return url 
+        } else {
+        return hash_parts[0]
+
+        }
+}
+
+    $("a").attr("href", function(i, oldHref) {
+      return fixUrl(oldHref);
+    });
+
+if (offroad == true) {
+// hide tour related things and adjust hyperlinks
+
+    
+    $("nottour").show()
+    
+    //adds offroad id into placeholders
+    $("a.tour_return").attr("href", function(i, oldHref) {
+      return oldHref.replace("0000",offroad_id);
+    });
+
+    //makes links back to tour home remove offroad mode
+    $("a#" + offroad_id).attr("href", function(i, oldHref) {
+      return cleanURL(oldHref);
+    });    
+    
+    $("a#" + offroad_id).after(" (tour)")
+    
+} else {
+
+    $("tour").show()
+    $("a.hastour").attr("href", function(i, oldHref) {
+      return cleanURL(oldHref);
+    });
+    }
+
+
+
+
+coord_lookup = {
+                
+                "14645":{lat: 3.42, lng: 50.21},
+                
+                "14648":{lat: 3.48, lng: 65.39},
+                
+                "15387":{lat: -3.89, lng: 76.27},
+                
+                "15185":{lat: -11.7, lng: 59.82},
+                
+                "14650":{lat: -12.79, lng: 77.09},
+                
+                "15140":{lat: -17.67, lng: 67.96},
+                
+                "15134":{lat: -28.23, lng: 66.66},
+                
+                "14646":{lat: -19.35, lng: 72.08},
+                
+                }
+
+
+
+ 
+ //add marker
+     var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-15.0, 70.0),
+      map: map,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/green.png',
+      title: 'Solitudo Alarum'
+  });
+
+
+     
+  //add nearest markers
+  
+  
+  
+      dest_id = "14645"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/14645'
+      } else {
+            url = '/feature/14645#5627.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/14645'
+      } else {
+            url = '/feature/14645#5627.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(3.42, 50.21),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Picasso (920 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "14648"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/14648'
+      } else {
+            url = '/feature/14648#5627.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/14648'
+      } else {
+            url = '/feature/14648#5627.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(3.48, 65.39),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Firdousi (355 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "15387"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/15387'
+      } else {
+            url = '/feature/15387#5627.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/15387'
+      } else {
+            url = '/feature/15387#5627.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-3.89, 76.27),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Bagryana (299 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "15185"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/15185'
+      } else {
+            url = '/feature/15185#5627.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/15185'
+      } else {
+            url = '/feature/15185#5627.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-11.7, 59.82),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Barney (437 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "14650"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/14650'
+      } else {
+            url = '/feature/14650#5627.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/14650'
+      } else {
+            url = '/feature/14650#5627.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-12.79, 77.09),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Steichen (303 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "15140"
+      dest_tour = "last"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/15140'
+      } else {
+            url = '/feature/15140#5627.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/15140'
+      } else {
+            url = '/feature/15140#5627.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-17.67, 67.96),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'David (95 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "15134"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/15134'
+      } else {
+            url = '/feature/15134#5627.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/15134'
+      } else {
+            url = '/feature/15134#5627.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-28.23, 66.66),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Nautilus Rupes (251 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "14646"
+      dest_tour = "next"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/14646'
+      } else {
+            url = '/feature/14646#5627.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/14646'
+      } else {
+            url = '/feature/14646#5627.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-19.35, 72.08),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Kipling (107 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+
+  
+  
+  
+  var lineSymbol = {
+    path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+    strokeOpacity: 1,
+  };
+
+  
+       var NextCoords = [
+        
+        {lat: -15.0, lng: 70.0},
+        
+        {lat: -19.35, lng: 72.08},
+        
+      ];
+  
+  if (offroad == false ) {
+      var Coords = [
+        
+        {lat: -28.23, lng: 66.66},
+        
+        {lat: -17.67, lng: 67.96},
+        
+        {lat: -15.0, lng: 70.0},
+        
+      ];
+  } else {
+
+      var Coords = [
+        coord_lookup[prev_id],
+        {lat: -15.0, lng: 70.0},
+      ];  
+  
+  }
+
+  var lastLine = new google.maps.Polyline({
+    path: Coords,
+    geodesic: true,
+    strokeColor: '#660000',
+    strokeOpacity: 0.5,
+    strokeWeight: 3,
+    icons: [{
+      icon: lineSymbol,
+      offset: '20%',
+      repeat: '30px'
+    }],
+  });
+  lastLine.setMap(map);
+  
+  
+  
+  if (offroad == false ) {  
+  // also do next line
+      var nextLine = new google.maps.Polyline({
+        path: NextCoords,
+        geodesic: true,
+        strokeColor: '#000000',
+        strokeOpacity: 0,
+        strokeWeight: 3,
+        icons: [{
+          icon: lineSymbol,
+          offset: '20%',
+          repeat: '30px'
+        }],
+      });
+      nextLine.setMap(map);
+    }  
+
+
+                
+                        
+				}
+		</script>
+
+
+
+
+
+
+</body>
+
+</html>

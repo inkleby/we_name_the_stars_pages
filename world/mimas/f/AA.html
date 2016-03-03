@@ -1,0 +1,807 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Mimas</title>
+
+
+
+<meta property="og:title" content="Mimas" />
+<meta property="og:site_name" content="We Name The Stars"/>
+<meta property="og:description" content="Mimas" />
+<meta property="og:url" content="http://127.0.0.1:8000/" />
+<meta property="og:image" content="http://wenamethestars.inkleby.com/static/images/pluto.png" />
+
+
+
+<link rel="apple-touch-icon" sizes="57x57" href = "/static/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href = "/static/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href = "/static/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href = "/static/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href = "/static/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href = "/static/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href = "/static/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href = "/static/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href = "/static/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href = "/static/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href = "/static/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href = "/static/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href = "/static/favicon/favicon-16x16.png">
+<link rel="manifest" href = "{% static "favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" %}">
+<meta name="theme-color" content="#ffffff">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href=/static/css/bootstrap.min.css rel="stylesheet">
+<link href=/static/css/inkleby_generic.css rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+
+</head>
+
+<body >
+    <nav class=" navbar navbar-inverse navbar-fixed-top navbar-font" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-font navbar-brand " href="/" style="color:#FFF">We Name The Stars</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    
+                    <li>
+                        <a href="/rover/"style="color:#FFF" >Moon Rover</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/"style="color:#FFF" >About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.inkleby.com/"style="color:#FFF" >Inkleby</a>
+                    </li>
+                    
+                    <li>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+		
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->		
+
+    </nav>
+
+
+
+<br><br><br>
+
+
+
+<style>
+
+.table-row { 
+  overflow: hidden; 
+}
+.table-row .table-cell {
+  # your other styles
+  float: left;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.table-border {
+border-style: solid;
+border-width: 2px 1px 0px 2px;
+}
+
+.row-border {
+border-style: solid;
+border-width: 0px 0px 2px 0px;
+}
+
+.jumboadjust {
+background-color:white;
+margin-top:5px;
+padding-top:10px;
+padding-bottom:0px;
+text-align:center
+}
+
+
+</style>
+
+<div class = "container">
+    <div class = "jumbotron jumboadjust">
+
+        
+        
+        <h4 class="responsive-hide"></h4>
+        
+        
+        <h4 class="responsive-hide"></h4>
+        
+        
+        <h4 class="responsive-hide"></h4>
+        
+        
+        <h2><a href="/world/mimas">Mimas</a></h2>
+        
+        
+    </div>
+    <hr>
+
+
+    
+    
+    
+    <h3 style="text-align:center">Features associated with: <b>Crater</b> 
+    
+    
+    
+    </h3>
+    <div class = "col-md-8 col-md-offset-2">
+    <div class = "row header_row">
+        <div class = "col-md-2">
+            Type
+        </div>
+    <div class = "col-md-3">
+            Feature Name
+        </div>
+        <div class = "col-md-6" >
+            Origin
+        </div>   
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/29">Accolon</a>
+        </div>
+
+        <div class = "col-md-6">
+            Companion of Arthur's; he was tricked into jousting with Arthur.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/403">Arthur</a>
+        </div>
+
+        <div class = "col-md-6">
+            King of the Round Table Assemblage.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/577">Balin</a>
+        </div>
+
+        <div class = "col-md-6">
+            Knight of "matchless courage and virtue"
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/590">Ban</a>
+        </div>
+
+        <div class = "col-md-6">
+            King of Benwick; father of Sir Launcelot, ally of Arthur in the battle of Bedgrayne.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/656">Bedivere</a>
+        </div>
+
+        <div class = "col-md-6">
+            Arthurian knight.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/829">Bors</a>
+        </div>
+
+        <div class = "col-md-6">
+            King of Gaul; father of Sir Ector de Marys, Sir Bors, Sir Lyonel.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/14442">Dagonet</a>
+        </div>
+
+        <div class = "col-md-6">
+            Fool at King Arthur's court.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/1684">Dynas</a>
+        </div>
+
+        <div class = "col-md-6">
+            A knight of the Round Table.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/1754">Elaine</a>
+        </div>
+
+        <div class = "col-md-6">
+            Daughter of King Pelles, lover of Sir Launcelot and mother, by him, of Sir Galahad.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/2058">Gaheris</a>
+        </div>
+
+        <div class = "col-md-6">
+            Older son of King Lot; killed by Sir Launcelot in his rescue of Gwynevere from burning.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/2062">Galahad</a>
+        </div>
+
+        <div class = "col-md-6">
+            Bastard son of Launcelot and Elaine. He went on the quest to find the Holy Grail.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/2106">Gareth</a>
+        </div>
+
+        <div class = "col-md-6">
+            Youngest son of King Lot; killed by Sir Launcelot in his rescue of Gwynevere from burning.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/2123">Gawain</a>
+        </div>
+
+        <div class = "col-md-6">
+            Eldest son of King Lot; Arthur's favorite cousin.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/2298">Gwynevere</a>
+        </div>
+
+        <div class = "col-md-6">
+            Queen; wife of Arthur; lover of Launcelot.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/2478">Herschel</a>
+        </div>
+
+        <div class = "col-md-6">
+            Named after <a href="https://en.wikipedia.org/wiki/William_Herschel" target="_blank">William Herschel</a> - German-British astronomer; discovered Mimas and Enceladus (1738-1822).
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/2656">Igraine</a>
+        </div>
+
+        <div class = "col-md-6">
+            Wife of Uther; mother of Arthur.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/2729">Iseult</a>
+        </div>
+
+        <div class = "col-md-6">
+            Loved by Tristram.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/2969">Kay</a>
+        </div>
+
+        <div class = "col-md-6">
+            Royal seneschal at Arthur's court.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/3255">Lamerok</a>
+        </div>
+
+        <div class = "col-md-6">
+            Pellinore's son; sent testing horn to King Mark to expose adultery of Sir Tristram.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/3300">Launcelot</a>
+        </div>
+
+        <div class = "col-md-6">
+            King Arthur's favorite; champion and lover of Queen Gwynevere.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/3478">Lot</a>
+        </div>
+
+        <div class = "col-md-6">
+            Leader of the rebel kings of the north and west. Married Margawse and begat Sir Gawain, Sir Aggravayne, Sir Gaheris.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/14443">Lucas</a>
+        </div>
+
+        <div class = "col-md-6">
+            Butler at King Arthur's court.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/14444">Marhaus</a>
+        </div>
+
+        <div class = "col-md-6">
+            Delivers poison wound to Tristram before being mortally wounded by him.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/3717">Mark</a>
+        </div>
+
+        <div class = "col-md-6">
+            King of Cornwall.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/14445">Melyodas</a>
+        </div>
+
+        <div class = "col-md-6">
+            King of Lyoness; marries King Mark's sister, who dies bearing their son, Sir Tristram. 
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/3857">Merlin</a>
+        </div>
+
+        <div class = "col-md-6">
+            Magician and prophet; son of the devil; Arthur's mentor.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/3941">Modred</a>
+        </div>
+
+        <div class = "col-md-6">
+            Arthur's bastard son and mortal enemy; delivered fatal wound to Arthur but was killed by him.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/4036">Morgan</a>
+        </div>
+
+        <div class = "col-md-6">
+            Arthur's half sister; enchantress; plotted to destroy Arthur but failed.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/14446">Nero</a>
+        </div>
+
+        <div class = "col-md-6">
+            King of the West, principal enemy of Arthur.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/4563">Palomides</a>
+        </div>
+
+        <div class = "col-md-6">
+            Saracen enemy of Tristam. 
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/4641">Pellinore</a>
+        </div>
+
+        <div class = "col-md-6">
+            King whose duty was to pursue the questing beast and either run it to earth or lose his strength.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/4653">Percivale</a>
+        </div>
+
+        <div class = "col-md-6">
+            Very pure knight; accomplished quest of Holy Grail.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/14447">Royns</a>
+        </div>
+
+        <div class = "col-md-6">
+            King of the West, principal enemy of Arthur.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/6087">Tristram</a>
+        </div>
+
+        <div class = "col-md-6">
+            Saved Iseult; fell in love with her.
+        </div>     
+    
+     
+      
+    </div>
+    
+    
+    <div class = "row display_row">
+        <div class = "col-md-2">
+            Crater
+        </div>
+        <div class = "col-md-3">
+            <a href="/feature/6257">Uther</a>
+        </div>
+
+        <div class = "col-md-6">
+            Ruler of all Britain; Arthur's father.
+        </div>     
+    
+     
+      
+    </div>
+     
+    
+    </div>
+    
+    
+    
+    
+    
+    
+</div>
+
+
+
+
+
+        <div class="container" style="padding-bottom:20px">
+		<hr>
+		<div class = "row">
+			<div class="col-md-6">
+				<div class="row">
+					Built by <a href="http://www.inkleby.com">Inkleby</a> based on data from the <a target = "_blank" href="http://planetarynames.wr.usgs.gov/">Gazetteer of Planetary Nomenclature</a>.
+				</div>
+			</div>
+
+		
+		<div class="col-md-6 responsive-left">
+        This website uses cookies to see how many people visited (<a href="/privacy/">Learn More</a>).
+		</div>
+		
+		
+		</div>
+
+<script type="text/javascript" src="/static/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>

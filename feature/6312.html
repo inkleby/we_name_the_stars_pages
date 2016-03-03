@@ -1,0 +1,1050 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>van Gogh</title>
+
+
+
+
+
+
+<meta property="og:title" content="van Gogh" />
+<meta property="og:site_name" content="We Name The Stars"/>
+<meta property="og:description" content="Information page for van Gogh" />
+<meta property="og:url" content="http://127.0.0.1:8000/" />
+<meta property="og:image" content="http://wenamethestars.inkleby.com/static/images/pluto.png" />
+
+
+
+<link rel="apple-touch-icon" sizes="57x57" href = "/static/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href = "/static/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href = "/static/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href = "/static/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href = "/static/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href = "/static/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href = "/static/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href = "/static/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href = "/static/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href = "/static/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href = "/static/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href = "/static/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href = "/static/favicon/favicon-16x16.png">
+<link rel="manifest" href = "{% static "favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" %}">
+<meta name="theme-color" content="#ffffff">
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href=/static/css/bootstrap.min.css rel="stylesheet">
+<link href=/static/css/inkleby_generic.css rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+
+</head>
+
+<body onload="initialize()">
+    <nav class=" navbar navbar-inverse navbar-fixed-top navbar-font" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-font navbar-brand " href="/" style="color:#FFF">We Name The Stars</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    
+                    <li>
+                        <a href="/rover/"style="color:#FFF" >Moon Rover</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/"style="color:#FFF" >About</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.inkleby.com/"style="color:#FFF" >Inkleby</a>
+                    </li>
+                    
+                    <li>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+		
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->		
+
+    </nav>
+
+
+
+<br><br><br>
+
+
+
+<style>
+
+tour, nottour {
+    display:none;
+}
+
+.table-row { 
+  overflow: hidden; 
+}
+.table-row .table-cell {
+  # your other styles
+  float: left;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.table-border {
+border-style: solid;
+border-width: 2px 1px 0px 2px;
+}
+
+.row-border {
+border-style: solid;
+border-width: 0px 0px 2px 0px;
+}
+
+</style>
+
+
+<div class = "container">
+    <div class = "jumbotron" style="margin-top:5px;padding-top:10px;padding-bottom:10px;text-align:center">
+        <h2>van Gogh (<a href="/world/mercury">Mercury</a>)</h2>
+        
+        <h4>Named after <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh" target="_blank">Vincent Willem Gogh</a> - Dutch painter (1853-1890).</h4>
+        
+        <h4>A crater is a circular depression likely created by an impact event. On Mercury they are named after deceased artists, musicians, painters, and authors who have made outstanding or fundamental contributions to their field and have been recognized as art historically significant figures for more than 50 years.</h4>
+
+    </div>
+    <div class = "row">
+        <div class = "col-md-5 responsive-right-shift">
+            <div id="map-canvas"></div>
+            
+            
+            <sub><a href=" http://astrogeology.usgs.gov/search/details/Mercury/Messenger/Global/Mercury_MESSENGER_MDIS_mosaic_global_250m_2013/cub">Image Source</a>. Marker locations are approximate and may not always appear to align with image on map.</sub>
+            
+            
+        </div>
+            <div class = "col-md-6">
+                <div class = "row" >
+                
+                <div class = "row table-row row-border">
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>NW 363 km</b></p>
+                        <p>
+                         <a id="2343" class="" href="/feature/2343#6312.0000">Han Kan</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            5 Hours 40 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            4 Days 13 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>N 553 km</b></p>
+                        <p>
+                         <a id="15023" class="hastour" href="/feature/15023#6312.0000">Petronius</a> <tour>(last)</tour> 
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            8 Hours 38 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            6 Days 22 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>NE 652 km</b></p>
+                        <p>
+                         <a id="15148" class="" href="/feature/15148#6312.0000">Fuller</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            10 Hours 11 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            8 Days 4 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class = "row table-row row-border">
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>W 1265 km</b></p>
+                        <p>
+                         <a id="3730" class="" href="/feature/3730#6312.0000">Martí</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            19 Hours 46 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            15 Days 21 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <div class="responsive-hide">
+                        <h3>van Gogh</h3>
+                        <p>-76.75° N 221.45° E</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>E 608 km</b></p>
+                        <p>
+                         <a id="1113" class="" href="/feature/1113#6312.0000">Cervantes</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            9 Hours 30 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            7 Days 15 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                <div class = "row table-row row-border">
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>SW 1523 km</b></p>
+                        <p>
+                         <a id="2645" class="" href="/feature/2645#6312.0000">Ictinus</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            23 Hours 48 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            19 Days 2 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>S 155 km</b></p>
+                        <p>
+                         <a id="708" class="hastour" href="/feature/708#6312.0000">Bernini</a> <tour>(next)</tour> 
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            2 Hours 25 Minutes
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            1 Day 22 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                    <div class = "col-sm-4 table-cell table-border rcpl">
+
+                        
+                        <p><b>SE 2576 km</b></p>
+                        <p>
+                         <a id="3964" class="" href="/feature/3964#6312.0000">Monet</a>
+                         
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-buggy-min.png" alt="MRV" style="width:30px;height:30px;">
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            1 Day 16 Hours
+                            </div>
+                        </div>
+                        
+                        
+                        <div class = "row">
+                            <div class ="col-sm-2 col-xs-1">
+                                <img src="/static/images/space-suit-min.png" alt="Walking" style="width:25px;height:25px;"> 
+                            </div>
+                            <div class ="col-xs-10" style="text-align:left">
+                            32 Days 7 Hours
+                            </div>
+                        </div>
+                        <br>
+                        
+                        
+                    </div>
+                    
+                </div>
+                
+                </div>
+                 <div class = "row tour">
+
+                 
+                 <tour >
+                 <div class="center">
+                 
+                     Tour so far: Visited 467 locations over 128,469 km.
+                      Next: <a href="/feature/708">Bernini</a>
+                    <div class="auto-start">(<a href="/feature/708#auto">Auto Tour</a>).</div>
+                    <div class="auto-stop">(<a href="/feature/6312">Stop Tour</a>).</div>
+                     
+                 
+                 </div>
+                 </tour>
+                 <nottour style="display:None">
+                 <a class="tour_return" href="/feature/0000">Return to Tour</a>
+                 </nottour>
+                 
+                </div>               
+            </div>
+    </div>
+    
+</div>
+
+
+
+
+
+        <div class="container" style="padding-bottom:20px">
+		<hr>
+		<div class = "row">
+			<div class="col-md-6">
+				<div class="row">
+					Built by <a href="http://www.inkleby.com">Inkleby</a> based on data from the <a target = "_blank" href="http://planetarynames.wr.usgs.gov/">Gazetteer of Planetary Nomenclature</a>.
+				</div>
+			</div>
+
+		
+		<div class="col-md-6 responsive-left">
+        This website uses cookies to see how many people visited (<a href="/privacy/">Learn More</a>).
+		</div>
+		
+		
+		</div>
+
+<script type="text/javascript" src="/static/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+    
+		<script>
+			/*
+			 * Adapated from PS_Bramus.GoogleMapsTileCutter Config
+			 * ----------------
+			 */
+
+				var repeatOnXAxis = true; // Do we need to repeat the image on the X-axis? Most likely you'll want to set this to -
+
+
+
+			/*
+			 * Helper function which normalizes the coords so that tiles can repeat across the X-axis (horizontally) like the standard Google map tiles.
+			 * ----------------
+			 */
+
+				function getNormalizedCoord(coord, zoom) {
+					if (!repeatOnXAxis) return coord;
+
+					var y = coord.y;
+					var x = coord.x;
+
+					// tile range in one direction range is dependent on zoom level
+					// 0 = 1 tile, 1 = 2 tiles, 2 = 4 tiles, 3 = 8 tiles, etc
+					var tileRange = 1 << zoom;
+
+					// don't repeat across Y-axis (vertically)
+					if (y < 0 || y >= tileRange) {
+						return null;
+					}
+
+					// repeat across X-axis
+					if (x < 0 || x >= tileRange) {
+						x = (x % tileRange + tileRange) % tileRange;
+					}
+
+                    
+					return {
+						x: x,
+						y: y
+					};
+
+				}
+
+
+                
+                
+				    function initialize() {
+
+                    
+                    
+					// Define our custom map type
+					var customMapType = new google.maps.ImageMapType({
+						getTileUrl: function(coord, zoom) {
+							var normalizedCoord = getNormalizedCoord(coord, zoom);
+							if(normalizedCoord && (normalizedCoord.x < Math.pow(2, zoom)) && (normalizedCoord.x > -1) && (normalizedCoord.y < Math.pow(2, zoom)) && (normalizedCoord.y > -1)) {
+								return "http://inkleby.github.io/world_tiles/Mercury/" + zoom + '_' + normalizedCoord.x + '_' + normalizedCoord.y + '.png';
+							} else {
+								return '/static/empty.png';
+							}
+						},
+						tileSize: new google.maps.Size(256, 256),
+						maxZoom: 6,
+                        radius: 2439.7 * 1000, //depends on planet
+						name: 'Mercury',
+                        credit: 'Image Credit: NASA/JPL/ASU/MSSS'
+					});
+                    
+                    
+                    
+                    POSITIVE_WEST = false
+                    
+                    
+                    x_offset = 128
+                    y_offset = -64
+                    
+                    if (POSITIVE_WEST == true) {
+                    x_offset = 0 - x_offset
+                    }
+                    
+                    
+                    customMapType.projection = {
+                        fromLatLngToPoint: function(latLng) {
+                          x = latLng.lng();
+                          y = latLng.lat();
+                          
+                          y = 0 -(((y/90) * 64)  + y_offset)
+                          x = (((x/180) * 128)  + x_offset)
+                          
+                          if (POSITIVE_WEST == true) {
+                          x = 0 - x
+                          }
+                          
+                          
+                          return new google.maps.Point(x,y);
+                        },
+                        fromPointToLatLng: function(point, noWrap) {
+                          var x = point.x
+                          
+                          if (POSITIVE_WEST == true) {
+                            x = 0 - x
+                            }
+                          
+                          x = (((x - x_offset)/128)*180);
+                          
+                          var y = 0 - (point.y)
+                          y = (((y - y_offset)/64)*90);
+                          //if (y > 90){
+                          //y = 0 - (y - 90)
+                          //}                          
+                          
+                          
+                          return new google.maps.LatLng(
+                              y,x,noWrap);
+                        }
+                      };
+                    
+                    
+					// Basic options for our map
+					var myOptions = {
+                        center: new google.maps.LatLng(-76.75, 221.45),
+						zoom: 5,
+						minZoom: 0,
+                        maxZoom: 7,
+                        scrollWheelZoom:'center',
+						streetViewControl: false,
+						mapTypeControl: false,
+						mapTypeControlOptions: {
+							mapTypeIds: ["custom"]
+						}
+					};
+                    
+
+                    
+                    
+					// Init the map and hook our custom map type to it
+					var map = new google.maps.Map(document.getElementById('map-canvas'), myOptions);
+					map.mapTypes.set('custom', customMapType);
+					
+
+                      // push the credit/copyright custom control
+                    map.setMapTypeId('custom');
+                    
+                    
+                    
+ 
+ var hash = window.location.hash.substring(1);
+ var next_feature = "708";
+ var progression_speed = 30000
+ 
+if (hash == "auto") {
+    if (next_feature != "") {
+    window.setTimeout(function(){
+
+        // Move to next location
+        window.location.href = "/feature/"+ next_feature + "#auto";
+
+    }, progression_speed);
+    }
+    hash = ""
+    $(".auto-start").hide()
+} else {
+    $(".auto-stop").hide()
+}
+ 
+if (hash != "" ){
+    o = hash.split(".")
+    prev_id = o[0]
+    offroad_id = o[1]
+    offroad = true
+} else {
+    prev_id = 0
+    offroad_id = "6312"
+    offroad = false
+}
+
+function fixUrl(url) {
+    //given a url, sees if it should have the offroad position injected
+    hash_parts = url.split("#")
+    
+    if (hash_parts.length < 2) {
+        return url 
+        } else {
+        return url.replace(".0000","." + offroad_id)
+
+        }
+}
+
+function cleanURL(url) {
+    //given a url, sees if it has a hash and removes it
+    hash_parts = url.split("#")
+    
+    if (hash_parts.length < 2) {
+        return url 
+        } else {
+        return hash_parts[0]
+
+        }
+}
+
+    $("a").attr("href", function(i, oldHref) {
+      return fixUrl(oldHref);
+    });
+
+if (offroad == true) {
+// hide tour related things and adjust hyperlinks
+
+    
+    $("nottour").show()
+    
+    //adds offroad id into placeholders
+    $("a.tour_return").attr("href", function(i, oldHref) {
+      return oldHref.replace("0000",offroad_id);
+    });
+
+    //makes links back to tour home remove offroad mode
+    $("a#" + offroad_id).attr("href", function(i, oldHref) {
+      return cleanURL(oldHref);
+    });    
+    
+    $("a#" + offroad_id).after(" (tour)")
+    
+} else {
+
+    $("tour").show()
+    $("a.hastour").attr("href", function(i, oldHref) {
+      return cleanURL(oldHref);
+    });
+    }
+
+
+
+
+coord_lookup = {
+                
+                "2343":{lat: -72.09, lng: 213.75},
+                
+                "15023":{lat: 86.06, lng: 319.49},
+                
+                "15148":{lat: 82.63, lng: 317.35},
+                
+                "3730":{lat: -75.96, lng: 191.74},
+                
+                "1113":{lat: -76.09, lng: 235.74},
+                
+                "2645":{lat: -79.56, lng: 185.76},
+                
+                "708":{lat: -80.32, lng: 219.03},
+                
+                "3964":{lat: 44.2, lng: 350.21},
+                
+                }
+
+
+
+ 
+ //add marker
+     var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-76.75, 221.45),
+      map: map,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/green.png',
+      title: 'van Gogh'
+  });
+
+
+     
+  //add nearest markers
+  
+  
+  
+      dest_id = "2343"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/2343'
+      } else {
+            url = '/feature/2343#6312.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/2343'
+      } else {
+            url = '/feature/2343#6312.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-72.09, 213.75),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Han Kan (363 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "15023"
+      dest_tour = "last"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/15023'
+      } else {
+            url = '/feature/15023#6312.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/15023'
+      } else {
+            url = '/feature/15023#6312.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(86.06, 319.49),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Petronius (553 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "15148"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/15148'
+      } else {
+            url = '/feature/15148#6312.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/15148'
+      } else {
+            url = '/feature/15148#6312.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(82.63, 317.35),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Fuller (652 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "3730"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/3730'
+      } else {
+            url = '/feature/3730#6312.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/3730'
+      } else {
+            url = '/feature/3730#6312.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-75.96, 191.74),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Martí (1265 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "1113"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/1113'
+      } else {
+            url = '/feature/1113#6312.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/1113'
+      } else {
+            url = '/feature/1113#6312.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-76.09, 235.74),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Cervantes (608 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "2645"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/2645'
+      } else {
+            url = '/feature/2645#6312.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/2645'
+      } else {
+            url = '/feature/2645#6312.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-79.56, 185.76),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Ictinus (1523 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "708"
+      dest_tour = "next"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/708'
+      } else {
+            url = '/feature/708#6312.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/708'
+      } else {
+            url = '/feature/708#6312.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(-80.32, 219.03),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Bernini (155 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+  
+  
+      dest_id = "3964"
+      dest_tour = "None"
+      if (offroad == true ) { //include the hash links if we're going off tour
+        if (dest_id == offroad_id) {
+            url = '/feature/3964'
+      } else {
+            url = '/feature/3964#6312.' + offroad_id
+            }
+      } else {
+        if (dest_tour != "None") {
+            url = '/feature/3964'
+      } else {
+            url = '/feature/3964#6312.' + offroad_id
+            }        
+      }
+
+       var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(44.2, 350.21),
+      map: map,
+      url: url,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      title: 'Monet (2576 km)'
+  });
+  marker.addListener('click', function() {
+    window.location.href = this.url;
+  });  
+  
+
+  
+  
+  
+  var lineSymbol = {
+    path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+    strokeOpacity: 1,
+  };
+
+  
+       var NextCoords = [
+        
+        {lat: -76.75, lng: 221.45},
+        
+        {lat: -80.32, lng: 219.03},
+        
+      ];
+  
+  if (offroad == false ) {
+      var Coords = [
+        
+        {lat: 82.63, lng: 317.35},
+        
+        {lat: 86.06, lng: 319.49},
+        
+        {lat: -76.75, lng: 221.45},
+        
+      ];
+  } else {
+
+      var Coords = [
+        coord_lookup[prev_id],
+        {lat: -76.75, lng: 221.45},
+      ];  
+  
+  }
+
+  var lastLine = new google.maps.Polyline({
+    path: Coords,
+    geodesic: true,
+    strokeColor: '#660000',
+    strokeOpacity: 0.5,
+    strokeWeight: 3,
+    icons: [{
+      icon: lineSymbol,
+      offset: '20%',
+      repeat: '30px'
+    }],
+  });
+  lastLine.setMap(map);
+  
+  
+  
+  if (offroad == false ) {  
+  // also do next line
+      var nextLine = new google.maps.Polyline({
+        path: NextCoords,
+        geodesic: true,
+        strokeColor: '#000000',
+        strokeOpacity: 0,
+        strokeWeight: 3,
+        icons: [{
+          icon: lineSymbol,
+          offset: '20%',
+          repeat: '30px'
+        }],
+      });
+      nextLine.setMap(map);
+    }  
+
+
+                
+                        
+				}
+		</script>
+
+
+
+
+
+
+</body>
+
+</html>
